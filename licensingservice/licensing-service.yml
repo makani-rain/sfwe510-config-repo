@@ -1,5 +1,3 @@
-example:
-  property: I AM THE DEFAULT
 
 spring:
   jpa:
@@ -23,3 +21,11 @@ management:
       exposure:
         include: "*"
     enabled-by-default: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: ""
+example:
+  property: I AM THE DEFAULT
